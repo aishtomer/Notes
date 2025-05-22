@@ -1,3 +1,5 @@
+# Speaking Mathematically
+
 ## Universal Statement
 
 A **universal statement** asserts that a certain property holds for **all elements** in a set.
@@ -27,8 +29,6 @@ For a number `b` to be an **additive inverse** of a number `a`, it must satisfy:
 a + b = 0
 ```
 
----
-
 ## Set Notation
 
 ### Set-Roster Notation
@@ -49,8 +49,6 @@ For large or infinite sets, we use ellipsis `...`:
 * `{1, 2, 3, ..., 100}`: all integers from 1 to 100
 * `{1, 2, 3, ...}`: all positive integers
 
----
-
 ### Set-Builder Notation
 
 Let `S` be a set and `P(x)` a property that elements of `S` may or may not satisfy.
@@ -64,16 +62,12 @@ The set of all `x` in `S` such that `P(x)` is true is written as:
 * Read as: *"The set of all x in S such that P(x) holds."*
 * The vertical bar `|` is read as "such that".
 
----
-
 ## Axiom of Extension
 
 A set is completely determined by **its elements**, regardless of:
 
 * The **order** in which elements are listed
 * Whether **duplicates** are listed
-
----
 
 ## Common Sets
 
@@ -82,8 +76,6 @@ A set is completely determined by **its elements**, regardless of:
 | **ℝ**  | Set of real numbers                     |
 | **ℤ**  | Set of integers                         |
 | **ℚ**  | Set of all rational numbers (fractions) |
-
----
 
 ## Subsets
 
@@ -117,8 +109,6 @@ Means: *There is at least one element of A that is not in B.*
 
 * Every element of `A` is in `B`, **and**
 * There is at least one element in `B` **not** in `A`
-
----
 
 ## Ordered Pairs and Tuples
 
@@ -181,8 +171,6 @@ Let `A` be a finite set and `n` a positive integer.
 
 If `A = {0, 1}`, then strings over `A` are called **bit strings**.
 
----
-
 ## Definition: Relation from A to B
 
 Let **A** and **B** be sets.  
@@ -196,8 +184,6 @@ Given an ordered pair (x, y) in **A × B**,
 **Notation:**
 - `x R y` means that **(x, y) ∈ R**
 - `x 𝓡̸ y` means that **(x, y) ∉ R**
-
----
 
 ## Arrow Diagram of a Relation
 
@@ -216,8 +202,6 @@ The **arrow diagram** for **R** is obtained as follows:
   **if and only if** `x R y`  
   **if and only if** `(x, y) ∈ R`
 
----
-
 ## Definition: Function from A to B
 
 A **function F** from a set **A** to a set **B**  
@@ -230,8 +214,6 @@ that satisfies the following two properties:
 2. For all elements **x** in **A** and **y** and **z** in **B**,  
    if **(x, y) ∈ F** and **(x, z) ∈ F**, then **y = z**
 
----
-
 ## Function Notation
 
 If **A** and **B** are sets and **F** is a function from **A** to **B**,  
@@ -239,6 +221,27 @@ then given any element **x** in **A**,
 the unique element in **B** that is related to **x** by **F**  
 is denoted **F(x)**, which is read **“F of x.”**
 
+### 📘 Definition
+
+A **graph** $G$ consists of two finite sets: a nonempty set $V(G)$ of **vertices** and a set $E(G)$ of **edges**, where each edge is associated with a set consisting of either one or two vertices called its **endpoints**. The correspondence from edges to endpoints is called the **edge-endpoint function**.
+
+An edge with just one endpoint is called a **loop**, and two or more distinct edges with the same set of endpoints are said to be **parallel**. An edge is said to **connect** its endpoints; two vertices that are connected by an edge are called **adjacent**; and a vertex that is an endpoint of a loop is said to be **adjacent to itself**.
+
+An edge is said to be **incident on** each of its endpoints, and two edges incident on the same endpoint are called **adjacent**. A vertex on which no edges are incident is called **isolated**.
+
+### 🔹 Note
+
+Each directed graph has an associated ordinary (undirected) graph, which is obtained by ignoring the directions of the edges.
+
+### 📘 Definition
+
+A **directed graph**, or **digraph**, consists of two finite sets: a nonempty set $V(G)$ of vertices and a set $D(G)$ of directed edges, where each is associated with an ordered pair of vertices called its **endpoints**. If edge $e$ is associated with the pair $(v, w)$ of vertices, then $e$ is said to be the **(directed) edge** from $v$ to $w$.
+
+### 📘 Definition
+
+Let $G$ be a graph and $v$ a vertex of $G$. The **degree of $v$**, denoted **deg($v$)**, equals the number of edges that are incident on $v$, with an edge that is a loop counted twice.
+
 ---
+# The Logic of Compound Statements
 
 
