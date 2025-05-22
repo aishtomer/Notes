@@ -137,8 +137,6 @@ Equality condition:
 (x₁, ..., xₙ) = (y₁, ..., yₙ) ⇔ x₁ = y₁, ..., xₙ = yₙ
 ```
 
----
-
 ## Cartesian Product
 
 Given sets `A₁, A₂, ..., Aₙ`, their **Cartesian product** is:
@@ -221,7 +219,7 @@ then given any element **x** in **A**,
 the unique element in **B** that is related to **x** by **F**  
 is denoted **F(x)**, which is read **“F of x.”**
 
-### 📘 Definition
+## Graph Definition
 
 A **graph** $G$ consists of two finite sets: a nonempty set $V(G)$ of **vertices** and a set $E(G)$ of **edges**, where each edge is associated with a set consisting of either one or two vertices called its **endpoints**. The correspondence from edges to endpoints is called the **edge-endpoint function**.
 
@@ -229,15 +227,15 @@ An edge with just one endpoint is called a **loop**, and two or more distinct ed
 
 An edge is said to be **incident on** each of its endpoints, and two edges incident on the same endpoint are called **adjacent**. A vertex on which no edges are incident is called **isolated**.
 
-### 🔹 Note
+### Note
 
 Each directed graph has an associated ordinary (undirected) graph, which is obtained by ignoring the directions of the edges.
 
-### 📘 Definition
+### Directed Graph
 
 A **directed graph**, or **digraph**, consists of two finite sets: a nonempty set $V(G)$ of vertices and a set $D(G)$ of directed edges, where each is associated with an ordered pair of vertices called its **endpoints**. If edge $e$ is associated with the pair $(v, w)$ of vertices, then $e$ is said to be the **(directed) edge** from $v$ to $w$.
 
-### 📘 Definition
+### Degree of Graph
 
 Let $G$ be a graph and $v$ a vertex of $G$. The **degree of $v$**, denoted **deg($v$)**, equals the number of edges that are incident on $v$, with an edge that is a loop counted twice.
 
