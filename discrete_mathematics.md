@@ -182,3 +182,63 @@ Let `A` be a finite set and `n` a positive integer.
 If `A = {0, 1}`, then strings over `A` are called **bit strings**.
 
 ---
+
+## Definition: Relation from A to B
+
+Let **A** and **B** be sets.  
+A **relation R from A to B** is a subset of **A × B**.  
+Given an ordered pair (x, y) in **A × B**,  
+**x is related to y by R**, written **x R y**, if and only if **(x, y) ∈ R**.
+
+- The set **A** is called the **domain** of **R**
+- The set **B** is called the **co-domain** of **R**
+
+**Notation:**
+- `x R y` means that **(x, y) ∈ R**
+- `x 𝓡̸ y` means that **(x, y) ∉ R**
+
+---
+
+## Arrow Diagram of a Relation
+
+Suppose **R** is a relation from a set **A** to a set **B**.
+
+The **arrow diagram** for **R** is obtained as follows:
+
+1. Represent the elements of **A** as points in one region  
+   and the elements of **B** as points in another region.
+
+2. For each **x** in **A** and **y** in **B**,  
+   draw an arrow from **x to y** if and only if **x is related to y by R**.
+
+**Symbolically:**
+- Draw an arrow from **x to y**  
+  **if and only if** `x R y`  
+  **if and only if** `(x, y) ∈ R`
+
+---
+
+## Definition: Function from A to B
+
+A **function F** from a set **A** to a set **B**  
+is a relation with domain **A** and co-domain **B**  
+that satisfies the following two properties:
+
+1. For every element **x** in **A**,  
+   there is an element **y** in **B** such that **(x, y) ∈ F**.
+
+2. For all elements **x** in **A** and **y** and **z** in **B**,  
+   if **(x, y) ∈ F** and **(x, z) ∈ F**, then **y = z**
+
+---
+
+## Function Notation
+
+If **A** and **B** are sets and **F** is a function from **A** to **B**,  
+then given any element **x** in **A**,  
+the unique element in **B** that is related to **x** by **F**  
+is denoted **F(x)**, which is read **“F of x.”**
+
+---
+
+
