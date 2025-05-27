@@ -641,3 +641,682 @@ Here are all the **important notes** extracted and clearly organized from your p
 
 ---
 
+### 🏗️ **HTML Basics & History**
+
+* **HTML** stands for **Hypertext Markup Language**.
+* **Hypertext**: Text with links to other content.
+* **Markup**: Tags and elements used to structure a document.
+* Invented by **Sir Tim Berners-Lee** at **CERN**.
+* First version of HTML: **1991**.
+* Maintained by the **W3C (World Wide Web Consortium)**.
+* Current version: **HTML5**.
+
+---
+
+### 🧱 **HTML Structure = The Frame of a Webpage**
+
+* HTML is like the **frame of a building** — it gives structure.
+* Files are **.html** (e.g. `index.html`).
+* Can be opened in a browser even **without a web server**.
+
+---
+
+### 📄 **HTML Document Skeleton**
+
+1. `<!DOCTYPE html>` – Declares the document type.
+2. `<html>` – Root element of the document.
+
+   * `<head>` – Metadata (not displayed on the page).
+
+     * `<title>` – Shown on browser tab.
+     * `<meta>` – Info like description, keywords, charset, etc.
+   * `<body>` – Actual page content (headings, paragraphs, images, etc.).
+
+---
+
+### 🏷️ **Tags vs. Elements**
+
+* **Tags** = The syntax inside angle brackets (e.g., `<p>`).
+* **Elements** = Full construct with opening tag, content, and closing tag (e.g., `<p>Hello</p>`).
+* **Self-closing elements**: Don’t need a closing tag. Example: `<br>`.
+
+---
+
+### 📚 **Common HTML Tags**
+
+#### ➤ **Text Elements**
+
+* `<h1>` to `<h6>` – Headings (H1 is biggest/most important).
+* `<p>` – Paragraph.
+* `<br>` – Line break (self-closing).
+* `<strong>` – Strong importance (often bold).
+* `<b>` – Just bold (no semantic importance).
+* `<em>` – Emphasized (usually italicized).
+* `<i>` – Italics (used for technical terms, titles, etc.).
+
+#### ⚖️ **Emphasis vs Italics**
+
+* `<em>` has **semantic meaning** (screen readers notice).
+* `<i>` is for **stylistic offset** (screen readers ignore).
+
+---
+
+### 📋 **Lists**
+
+* `<ul>` – Unordered list (bullets).
+* `<ol>` – Ordered list (numbers).
+* `<li>` – List item (used inside `<ul>` or `<ol>`).
+
+---
+
+### 📦 **Div Tag**
+
+* `<div>` – Block-level container for grouping elements.
+* Has **no visual effect** without CSS.
+* Can be **nested**.
+* Can be **styled with CSS**:
+
+  ```html
+  <style>
+    div {
+      border: 1px solid black;
+      padding: 2px;
+    }
+  </style>
+  ```
+
+---
+
+### 💬 **Comments**
+
+* Use `<!-- comment -->` to leave notes in your HTML code.
+* Not displayed in the browser.
+
+---
+
+### 🍋 **Little Lemon Restaurant Example**
+
+* `index.html` file created in **Visual Studio Code**.
+* Used:
+
+  * `<h1>` for **"Our Menu"**
+  * `<h2>` for **"Falafel"** and **"Pasta Salad"**
+  * `<p>` for descriptions like "Chickpeas, herbs, and spices".
+* File saved, then opened in browser to preview.
+* Inspired tip: Look at food websites for HTML tag practice.
+
+---
+
+### 🔶 **HTML Forms**
+
+* **Purpose**: Allow users to input data on web pages (e.g., credit card details, login info).
+* **Tag Used**: `<form>`
+
+  * **Attributes**:
+
+    * `action`: URL/path to which the form data is submitted.
+    * `method`: HTTP method used to send data (`GET` or `POST`).
+* **Common Input Fields**:
+
+  * `<input type="text">` – for single-line input like usernames.
+  * `<input type="password">` – masks input for passwords.
+  * `<input type="submit">` – creates a button to submit the form.
+  * `<input type="checkbox">` – allows multiple options to be selected.
+  * `<input type="radio">` – allows only one option in a group to be selected.
+  * `<input type="email">`, `<input type="number">`, `<input type="file">` – specialized input types.
+* **Other Elements**:
+
+  * `<label>` – gives context to input fields.
+  * `<textarea>` – for multi-line text input (e.g., comments).
+  * `<select>` and `<option>` – create a dropdown list.
+
+---
+
+### 🔶 **Document Object Model (DOM)**
+
+* **Definition**: A tree-like structure representing an HTML document in the browser.
+* **Purpose**: Allows JavaScript to dynamically access and manipulate HTML content.
+* **Structure**:
+
+  * Root: `html` object.
+
+    * Contains `head` and `body`.
+
+      * `head` contains elements like `title`.
+      * `body` contains visible page content like `div`, `h1`, `p`, etc.
+* **JavaScript Interaction with DOM**:
+
+  * Access/modify content and attributes.
+  * Add/remove HTML elements.
+  * Respond to user actions (e.g., clicks, mouseovers).
+  * Create animations (e.g., fade-ins, popups).
+* **Use Cases**:
+
+  * Updating a digital clock.
+  * Previewing a movie on hover.
+  * Disabling/enabling buttons on login forms.
+  * Displaying error messages dynamically.
+* **Libraries**: React and other JavaScript libraries rely heavily on the DOM.
+
+---
+
+### 🔶 **Web Accessibility**
+
+* **Goal**: Make websites usable by people with a wide range of disabilities.
+* **Initiative**: WAI (Web Accessibility Initiative) by W3C.
+
+  * Supported by legislation like the EU Web Accessibility Directive (2016).
+* **Disabilities Covered**:
+
+  * Visual, auditory, cognitive, neurological, physical, speech-related.
+* **Assistive Technologies**:
+
+  * **Screen readers** – read out webpage content.
+  * **Speech recognition software** – convert speech to text or commands.
+  * **Subtitles/video scripts** – aid those with hearing or visual impairments.
+* **Best Practices**:
+
+  * Use proper HTML structure (e.g., headings, paragraphs).
+  * Avoid bad practices like multiple `<br>` tags for spacing.
+  * Consider accessibility *from the start* of development.
+* **ARIA (Accessible Rich Internet Applications)**:
+
+  * Specification for making complex web applications more accessible.
+  * Provides techniques to improve accessibility beyond basic HTML.
+
+---
+
+## 💻 **HTML & CSS Analogy**
+
+* **HTML = Structure of the house** (walls, beams, roof).
+* **CSS = Style & Decor** (paint, wallpaper, lighting, furniture).
+
+---
+
+## 🎯 **What CSS Does**
+
+* CSS **tells the browser how to display HTML** elements.
+* It styles content with colors, layouts, fonts, and more.
+* It’s what stops your site from looking like 1997 vomited on a screen.
+
+---
+
+## 🧱 **Anatomy of a CSS Rule**
+
+```css
+selector {
+  property: value;
+  property: value;
+}
+```
+
+### Components:
+
+* **Selector** – targets the HTML element(s).
+* **Property** – what you want to style (e.g. `color`, `margin`).
+* **Value** – the style setting (e.g. `blue`, `10px`).
+* **Declaration block** – curly braces `{}` wrapping properties.
+
+---
+
+## 🧠 **CSS Specificity & Precedence**
+
+* **ID selectors override** type and class selectors.
+* CSS follows a **specificity hierarchy**.
+* The **more specific** the selector, the **more it dominates** like a diva at a karaoke night.
+
+---
+
+## 🛠️ **CSS File Setup**
+
+1. Create HTML file (e.g. `index.html`).
+2. Create CSS file (e.g. `style.css`).
+3. Link in HTML `<head>`:
+
+   ```html
+   <link rel="stylesheet" href="style.css">
+   ```
+
+---
+
+## 🔍 **Common CSS Selectors**
+
+### 1. **Element Selector**
+
+* Targets all of a specific tag type.
+
+```css
+p {
+  color: blue;
+}
+```
+
+### 2. **ID Selector**
+
+* Targets one unique element.
+* Use `#` prefix.
+
+```css
+#latest {
+  background-color: purple;
+}
+```
+
+### 3. **Class Selector**
+
+* Targets all elements with a shared class.
+* Use `.` prefix.
+
+```css
+.navigation {
+  margin: 2px;
+}
+```
+
+### 4. **Element with Class**
+
+* Targets specific tags **with** a class.
+
+```css
+p.introduction {
+  margin: 2px;
+}
+```
+
+### 5. **Descendant Selector**
+
+* Targets elements *within* another element.
+
+```css
+#blog h1 {
+  color: blue;
+}
+```
+
+* Multiple levels possible:
+
+```css
+#blog div h1 {
+  color: blue;
+}
+```
+
+### 6. **Child Selector**
+
+* Targets **direct children** only.
+
+```css
+#blog > h1 {
+  color: blue;
+}
+```
+
+* Doesn’t go more than one level deep.
+
+---
+
+## 🖱️ **:hover Pseudo-Class**
+
+* Adds interactivity on mouse hover.
+
+```css
+a:hover {
+  color: orange;
+}
+```
+
+* Great for buttons, links, hover effects—basically anything that likes attention.
+
+---
+
+## 🔧 **Pro Tip: VS Code Live Preview**
+
+* Use **Live Preview extension** to see changes instantly without refreshing.
+* Right-click your HTML file > **Show Preview**.
+
+---
+
+## 🏁 **Quick Recap**
+
+* **Selector + Declaration Block = CSS Rule**.
+* Declaration = **property: value;**
+* Styles are applied based on **specificity**.
+* Master selectors = master styling.
+
+---
+
+## 🎨 **COLOR in CSS**
+
+### **Color Properties**
+
+Used in many places like `color`, `background-color`, `border-color`, etc.
+
+### **5 Ways to Define Color:**
+
+1. **RGB**
+
+   * Format: `rgb(R, G, B)`
+   * Range: 0–255
+   * Example: `rgb(255, 0, 0)` = red
+
+2. **RGBA**
+
+   * Format: `rgba(R, G, B, A)`
+   * Adds **opacity** (A = 0 to 1)
+   * Example: `rgba(255, 0, 0, 0.5)` = 50% transparent red
+
+3. **HSL**
+
+   * Format: `hsl(H, S%, L%)`
+   * H = Hue (0–360), S = Saturation, L = Lightness
+   * Example: `hsl(0, 100%, 50%)` = pure red
+
+4. **Hexadecimal**
+
+   * Format: `#RRGGBB`
+   * Base-16 numbers (0–9, A–F)
+   * Example: `#FF0000` = red
+
+5. **Predefined Color Names**
+
+   * Examples: `red`, `green`, `blue`, `black`, `white`, etc.
+   * Total: 140 browser-supported names
+
+---
+
+## ✍️ **TEXT in CSS**
+
+### **Text Color**
+
+* Property: `color`
+* Example:
+
+  ```css
+  p { color: red; }
+  ```
+
+### **Font Family**
+
+* Property: `font-family`
+* Use **fallbacks** for missing fonts
+* Example:
+
+  ```css
+  p { font-family: "Courier New", monospace; }
+  ```
+
+### **Font Size**
+
+* Property: `font-size`
+* Can use `px`, `em`, `%`, etc.
+* Example:
+
+  ```css
+  p { font-size: 12px; }
+  ```
+
+### **Text Transformation**
+
+* Property: `text-transform`
+* Values: `uppercase`, `lowercase`, `capitalize`, `none`
+* Example:
+
+  ```css
+  p { text-transform: uppercase; }
+  ```
+
+### **Text Decoration**
+
+* Shorthand Property: `text-decoration`
+* Full custom properties:
+
+  * `text-decoration-line`: underline, overline, line-through, none
+  * `text-decoration-color`: sets color of the line
+  * `text-decoration-style`: solid, double, dotted, dashed, wavy
+  * `text-decoration-thickness`: sets line thickness
+* Example:
+
+  ```css
+  p {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+  }
+  ```
+
+---
+
+## 📦 **CSS BOX MODEL: The VIP Layout Formula**
+
+> Think of every HTML element as a Russian doll of layout pieces — each part wrapping the other like an overly dramatic fashion show. Here's what you're working with:
+
+---
+
+### 🔹 **The Four Layers of the Box Model**
+
+1. **Content**
+
+   * The *actual stuff*: text, images, videos, memes, emotional damage — whatever.
+   * You can control its size using:
+
+     * `width`, `min-width`, `max-width`
+     * `height`, `min-height`, `max-height`
+
+2. **Padding**
+
+   * Think of this as the *bubble wrap* around the content.
+   * It pushes the border away from the content.
+   * Controlled with:
+
+     * `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
+   * Shorthand? Use `padding`.
+
+3. **Border**
+
+   * The *frame* that wraps around both the content and padding.
+   * You can style it with:
+
+     * `border-width`, `border-style`, `border-color`
+     * Widths: `thin`, `medium`, `thick` (or specific pixel values)
+   * Types: `solid`, `dashed`, `dotted`, `double`, etc.
+
+4. **Margin**
+
+   * The *personal space* zone — keeps elements from being all up in each other’s business.
+   * Controlled with:
+
+     * `margin-top`, `margin-right`, `margin-bottom`, `margin-left`
+   * Shorthand? Use `margin`.
+
+---
+
+### 🧠 **Size Calculations Breakdown**
+
+Let’s pretend you passed high school math. Here’s how the browser calculates each box:
+
+* **Padding Box Width** =
+  `content width + padding-left + padding-right`
+
+* **Padding Box Height** =
+  `content height + padding-top + padding-bottom`
+
+* **Border Box Width** =
+  `padding box width + border-left + border-right`
+
+* **Border Box Height** =
+  `padding box height + border-top + border-bottom`
+
+* **Margin Box Width** =
+  `border box width + margin-left + margin-right`
+
+* **Margin Box Height** =
+  `border box height + margin-top + margin-bottom`
+
+---
+
+### 🎨 **Visual Metaphor to Remember It**
+
+> 🧍‍♀️ **You = Content**
+> 🧥 **Clothes = Padding**
+> 🧢 **Silhouette = Border**
+> ⛔ **Personal space = Margin** (Don’t stand so close, Karen.)
+
+---
+
+### 🧙‍♂️ **Pro Developer Wisdom**
+
+* The **box model** is *how browsers understand layout*. Every damn thing you see is a box. A box in a box in a box. It’s like CSS Inception.
+* Shorthand properties like `margin` and `padding` can save your life (and your keyboard).
+
+---
+
+## 🧱 **Document Flow & Element Display**
+
+### 💡 **What Is Document Flow?**
+
+* It’s how the browser *naturally* places elements on the screen — like Tetris, but for tags.
+* Two main categories of HTML elements:
+
+  * **Block-level elements**: Full-width, new line before & after, stack vertically like pancakes.
+  * **Inline elements**: Only as wide as their content, no line breaks — they chill side-by-side.
+
+---
+
+## 🧱 **Block-Level Elements**
+
+* Take up **entire horizontal width** of the parent.
+* Cause **line breaks** before and after.
+* Examples:
+
+  * `<div>`, `<form>`, `<h1>`–`<h6>`, `<p>`
+
+---
+
+## 🧵 **Inline Elements**
+
+* Only as big as their **content**.
+* Do **not** force a line break.
+* Fit like puzzle pieces in the flow.
+* Examples:
+
+  * `<span>`, `<a>`, `<img>`, `<input>`, `<label>`, `<b>`, `<i>`, `<em>`
+
+---
+
+## 🔄 **Switching Between Block & Inline**
+
+* Use the **`display` property** in CSS:
+
+  * `display: block;` → Forces full-width and new line.
+  * `display: inline;` → Flow with text, no break.
+  * You can *change an element’s display* type anytime with CSS.
+
+---
+
+## 🧪 **Example Recap**
+
+* Replacing `<span>` with `<div>` moves content to a new line.
+* Set `display: inline;` in CSS to revert `<div>` to inline behavior.
+
+```css
+#middle {
+  display: inline;
+}
+```
+
+---
+
+## ✍️ **Text Alignment**
+
+* Use `text-align` for aligning **text** inside elements:
+
+  ```css
+  p {
+    text-align: center; /* left, right, center, justify */
+  }
+  ```
+
+* Default:
+
+  * `left` for LTR languages (like English)
+  * `right` for RTL languages (like Arabic)
+
+---
+
+## 🧲 **HTML Element Alignment**
+
+> Now we’re in the **"align me like a pro"** section.
+
+### ✅ **Centering Block-Level Elements**
+
+1. **Set a width** on the element.
+2. Use `margin: auto;` to center it horizontally.
+
+```css
+.child {
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  display: block;
+}
+```
+
+### ✅ **Centering Inline Elements (e.g., `<img>`)**
+
+* Convert to block:
+
+  ```css
+  .child {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  ```
+* Or just set:
+
+  ```css
+  margin-left: auto;
+  margin-right: auto;
+  ```
+
+---
+
+## 🧭 **Left / Right Alignment with Float**
+
+* Use the `float` property to pin elements to the left or right.
+
+### Example:
+
+```html
+<div class="parent">
+  <img src="photo.png" class="child">
+  Lorem ipsum dolor...
+</div>
+```
+
+```css
+.child {
+  float: right;
+}
+```
+
+* Result: Image goes to the right, text wraps around it like a clingy ex.
+
+---
+
+## 🏆 TL;DR – Golden Nuggets
+
+| Concept             | What It Means                                      |
+| ------------------- | -------------------------------------------------- |
+| **Document Flow**   | Default order & positioning of HTML elements       |
+| **Block Element**   | Full-width, new line (e.g., `<div>`)               |
+| **Inline Element**  | Fits content, same line (e.g., `<span>`)           |
+| **display: block**  | Forces full-width behavior                         |
+| **display: inline** | Keeps element inline with text                     |
+| **text-align**      | Aligns text (`left`, `right`, `center`, `justify`) |
+| **margin: auto**    | Horizontally centers block-level elements          |
+| **float: right**    | Pushes element right, wraps text around it         |
+
+---
+
