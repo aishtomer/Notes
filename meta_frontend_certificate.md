@@ -51,7 +51,6 @@
 * This is called the **request-response cycle**.
 * Web servers can process **thousands of requests per second**.
 
----
 
 # 🌐 Webpages, Websites, Browsers & How It All Works
 
@@ -142,7 +141,6 @@
 * **Web browsers** request, receive, and render that content.
 * The **request-response cycle** powers everything from Googling memes to binge-watching cat videos.
 
----
 
 # ☁️ Web Hosting & Hosting Types
 
@@ -218,7 +216,6 @@
   **Dedicated** = high-roller.
   **Cloud** = future-proofed flexibility.
 
----
 
 # 📬 IP Addresses & Data Transmission Over the Internet
 
@@ -302,7 +299,6 @@ Just like letters, packets can:
 * **UDP** = speed freak courier (fast but forgetful)
 * Without protocols, the internet would be like a mailroom run by raccoons: chaos.
 
----
 
 # 🌐 **HTTP & HTTPS Basics**
 
@@ -414,7 +410,6 @@ Grouped by **first digit**:
 * **Status Codes**: Indicate result (success, error, etc.).
 * You use **HTTPS every day**—every time you log in, buy something, or browse securely online.
 
----
 
 # Other Internet Protocols
 
@@ -472,8 +467,6 @@ Grouped by **first digit**:
 * **Key Point**: Unlike FTP, **SFTP encrypts data**, preventing third-party interception.
 * **Compatibility**: Most FTP clients also support SFTP.
 
----
-
 ## 🖥️ **Web Pages, Websites, and Web Applications**
 
 ### ✅ **Web Page**
@@ -498,7 +491,6 @@ Grouped by **first digit**:
   * **Website** = mostly informative.
   * **Web Application** = interactive and user-driven.
 
----
 
 ## 🧰 **Frameworks and Libraries**
 
@@ -520,7 +512,6 @@ Grouped by **first digit**:
 * Benefit: Faster development, built-in best practices.
 * Downside: Less flexibility, possible library conflicts.
 
----
 
 ## ⚖️ **Frameworks vs Libraries**
 
@@ -533,7 +524,6 @@ Grouped by **first digit**:
 | Ease of Replacement | Easy to replace                   | Harder to replace                              |
 | Example Use         | Email validation, date formatting | Handling routing, requests, app logic          |
 
----
 
 ## 💡 **Other Key Notes**
 
@@ -542,11 +532,6 @@ Grouped by **first digit**:
 * **Reuse is essential** in modern development: Saves time, reduces bugs, and avoids reinventing the wheel.
 * Most frameworks **include libraries**, and you can also add your own libraries to them.
 
----
-
-Here are all the **important notes** extracted and clearly organized from your passage on **APIs**:
-
----
 
 ## 🔌 **API (Application Programming Interface)**
 
@@ -557,7 +542,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * APIs are used to **access features, services, or data**.
 * Broad term – covers many types of tools and systems.
 
----
 
 ## 👩‍💻 **Importance for Web Developers**
 
@@ -565,7 +549,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * Enable communication between **frontend (browser)** and **backend (server)**.
 * **Extend browser functionality**, fetch external data, or control hardware via sensors.
 
----
 
 ## 🌐 **Types of APIs in Web Development**
 
@@ -585,7 +568,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 | **History API**     | Manages browser session history.                               |
 | **Web Storage API** | Stores key-value pairs locally (localStorage, sessionStorage). |
 
----
 
 ### 2. **REST API (Representational State Transfer)**
 
@@ -612,7 +594,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * Often return data in **JSON format**.
 * Sometimes return full HTML/webpages.
 
----
 
 ### 3. **Sensor-Based APIs (IoT APIs)**
 
@@ -626,7 +607,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 | **Philips Hue** | Smart lighting systems.       |
 | **NodeBots**    | JavaScript-controlled robots. |
 
----
 
 ## 💡 **Key Concepts to Remember**
 
@@ -639,7 +619,6 @@ Here are all the **important notes** extracted and clearly organized from your p
   * **Third-party APIs**
   * **Built-in browser APIs**
 
----
 
 ### 🏗️ **HTML Basics & History**
 
@@ -651,7 +630,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * Maintained by the **W3C (World Wide Web Consortium)**.
 * Current version: **HTML5**.
 
----
 
 ### 🧱 **HTML Structure = The Frame of a Webpage**
 
@@ -659,7 +637,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * Files are **.html** (e.g. `index.html`).
 * Can be opened in a browser even **without a web server**.
 
----
 
 ### 📄 **HTML Document Skeleton**
 
@@ -672,7 +649,6 @@ Here are all the **important notes** extracted and clearly organized from your p
      * `<meta>` – Info like description, keywords, charset, etc.
    * `<body>` – Actual page content (headings, paragraphs, images, etc.).
 
----
 
 ### 🏷️ **Tags vs. Elements**
 
@@ -680,7 +656,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * **Elements** = Full construct with opening tag, content, and closing tag (e.g., `<p>Hello</p>`).
 * **Self-closing elements**: Don’t need a closing tag. Example: `<br>`.
 
----
 
 ### 📚 **Common HTML Tags**
 
@@ -699,7 +674,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * `<em>` has **semantic meaning** (screen readers notice).
 * `<i>` is for **stylistic offset** (screen readers ignore).
 
----
 
 ### 📋 **Lists**
 
@@ -707,7 +681,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * `<ol>` – Ordered list (numbers).
 * `<li>` – List item (used inside `<ul>` or `<ol>`).
 
----
 
 ### 📦 **Div Tag**
 
@@ -725,14 +698,12 @@ Here are all the **important notes** extracted and clearly organized from your p
   </style>
   ```
 
----
 
 ### 💬 **Comments**
 
 * Use `<!-- comment -->` to leave notes in your HTML code.
 * Not displayed in the browser.
 
----
 
 ### 🍋 **Little Lemon Restaurant Example**
 
@@ -745,7 +716,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * File saved, then opened in browser to preview.
 * Inspired tip: Look at food websites for HTML tag practice.
 
----
 
 ### 🔶 **HTML Forms**
 
@@ -770,7 +740,6 @@ Here are all the **important notes** extracted and clearly organized from your p
   * `<textarea>` – for multi-line text input (e.g., comments).
   * `<select>` and `<option>` – create a dropdown list.
 
----
 
 ### 🔶 **Document Object Model (DOM)**
 
@@ -798,7 +767,6 @@ Here are all the **important notes** extracted and clearly organized from your p
   * Displaying error messages dynamically.
 * **Libraries**: React and other JavaScript libraries rely heavily on the DOM.
 
----
 
 ### 🔶 **Web Accessibility**
 
@@ -824,14 +792,12 @@ Here are all the **important notes** extracted and clearly organized from your p
   * Specification for making complex web applications more accessible.
   * Provides techniques to improve accessibility beyond basic HTML.
 
----
 
 ## 💻 **HTML & CSS Analogy**
 
 * **HTML = Structure of the house** (walls, beams, roof).
 * **CSS = Style & Decor** (paint, wallpaper, lighting, furniture).
 
----
 
 ## 🎯 **What CSS Does**
 
@@ -839,7 +805,6 @@ Here are all the **important notes** extracted and clearly organized from your p
 * It styles content with colors, layouts, fonts, and more.
 * It’s what stops your site from looking like 1997 vomited on a screen.
 
----
 
 ## 🧱 **Anatomy of a CSS Rule**
 
@@ -857,7 +822,6 @@ selector {
 * **Value** – the style setting (e.g. `blue`, `10px`).
 * **Declaration block** – curly braces `{}` wrapping properties.
 
----
 
 ## 🧠 **CSS Specificity & Precedence**
 
@@ -865,7 +829,6 @@ selector {
 * CSS follows a **specificity hierarchy**.
 * The **more specific** the selector, the **more it dominates** like a diva at a karaoke night.
 
----
 
 ## 🛠️ **CSS File Setup**
 
@@ -877,7 +840,6 @@ selector {
    <link rel="stylesheet" href="style.css">
    ```
 
----
 
 ## 🔍 **Common CSS Selectors**
 
@@ -953,7 +915,6 @@ p.introduction {
 
 * Doesn’t go more than one level deep.
 
----
 
 ## 🖱️ **:hover Pseudo-Class**
 
@@ -967,14 +928,12 @@ a:hover {
 
 * Great for buttons, links, hover effects—basically anything that likes attention.
 
----
 
 ## 🔧 **Pro Tip: VS Code Live Preview**
 
 * Use **Live Preview extension** to see changes instantly without refreshing.
 * Right-click your HTML file > **Show Preview**.
 
----
 
 ## 🏁 **Quick Recap**
 
@@ -983,7 +942,6 @@ a:hover {
 * Styles are applied based on **specificity**.
 * Master selectors = master styling.
 
----
 
 ## 🎨 **COLOR in CSS**
 
@@ -1022,7 +980,6 @@ Used in many places like `color`, `background-color`, `border-color`, etc.
    * Examples: `red`, `green`, `blue`, `black`, `white`, etc.
    * Total: 140 browser-supported names
 
----
 
 ## ✍️ **TEXT in CSS**
 
@@ -1085,13 +1042,11 @@ Used in many places like `color`, `background-color`, `border-color`, etc.
   }
   ```
 
----
 
 ## 📦 **CSS BOX MODEL: The VIP Layout Formula**
 
 > Think of every HTML element as a Russian doll of layout pieces — each part wrapping the other like an overly dramatic fashion show. Here's what you're working with:
 
----
 
 ### 🔹 **The Four Layers of the Box Model**
 
@@ -1129,7 +1084,6 @@ Used in many places like `color`, `background-color`, `border-color`, etc.
      * `margin-top`, `margin-right`, `margin-bottom`, `margin-left`
    * Shorthand? Use `margin`.
 
----
 
 ### 🧠 **Size Calculations Breakdown**
 
@@ -1153,7 +1107,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 * **Margin Box Height** =
   `border box height + margin-top + margin-bottom`
 
----
 
 ### 🎨 **Visual Metaphor to Remember It**
 
@@ -1162,14 +1115,12 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 > 🧢 **Silhouette = Border**
 > ⛔ **Personal space = Margin** (Don’t stand so close, Karen.)
 
----
 
 ### 🧙‍♂️ **Pro Developer Wisdom**
 
 * The **box model** is *how browsers understand layout*. Every damn thing you see is a box. A box in a box in a box. It’s like CSS Inception.
 * Shorthand properties like `margin` and `padding` can save your life (and your keyboard).
 
----
 
 ## 🧱 **Document Flow & Element Display**
 
@@ -1181,7 +1132,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
   * **Block-level elements**: Full-width, new line before & after, stack vertically like pancakes.
   * **Inline elements**: Only as wide as their content, no line breaks — they chill side-by-side.
 
----
 
 ## 🧱 **Block-Level Elements**
 
@@ -1191,7 +1141,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 
   * `<div>`, `<form>`, `<h1>`–`<h6>`, `<p>`
 
----
 
 ## 🧵 **Inline Elements**
 
@@ -1202,7 +1151,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 
   * `<span>`, `<a>`, `<img>`, `<input>`, `<label>`, `<b>`, `<i>`, `<em>`
 
----
 
 ## 🔄 **Switching Between Block & Inline**
 
@@ -1212,7 +1160,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
   * `display: inline;` → Flow with text, no break.
   * You can *change an element’s display* type anytime with CSS.
 
----
 
 ## 🧪 **Example Recap**
 
@@ -1225,7 +1172,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 }
 ```
 
----
 
 ## ✍️ **Text Alignment**
 
@@ -1242,7 +1188,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
   * `left` for LTR languages (like English)
   * `right` for RTL languages (like Arabic)
 
----
 
 ## 🧲 **HTML Element Alignment**
 
@@ -1280,7 +1225,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
   margin-right: auto;
   ```
 
----
 
 ## 🧭 **Left / Right Alignment with Float**
 
@@ -1303,7 +1247,6 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 
 * Result: Image goes to the right, text wraps around it like a clingy ex.
 
----
 
 ## 🏆 TL;DR – Golden Nuggets
 
@@ -1317,6 +1260,4 @@ Let’s pretend you passed high school math. Here’s how the browser calculates
 | **text-align**      | Aligns text (`left`, `right`, `center`, `justify`) |
 | **margin: auto**    | Horizontally centers block-level elements          |
 | **float: right**    | Pushes element right, wraps text around it         |
-
----
 
