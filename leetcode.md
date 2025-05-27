@@ -11,8 +11,6 @@ nums = [1, 2, 3]
 mixed = [1, "two", 3.0, [4]]
 ```
 
----
-
 ## 🔧 Basic Operations
 
 ```python
@@ -45,8 +43,6 @@ nums.index(2)           # returns index of value
 nums.count(2)
 ```
 
----
-
 ## 🔁 Looping Through Lists
 
 ```python
@@ -60,8 +56,6 @@ for i, val in enumerate(nums):
     print(i, val)
 ```
 
----
-
 ## 🧹 List Comprehensions (Sexy AF)
 
 ```python
@@ -69,8 +63,6 @@ squares = [x*x for x in range(10)]
 evens = [x for x in nums if x % 2 == 0]
 matrix = [[0]*3 for _ in range(3)]  # 3x3 zero matrix
 ```
-
----
 
 ## 💥 Common Pitfalls
 
@@ -82,7 +74,6 @@ bad_matrix = [[0]*3]*3
 good_matrix = [[0]*3 for _ in range(3)]
 ```
 
----
 
 ## 🎨 Formatting & Printing
 
@@ -91,8 +82,6 @@ print(', '.join(map(str, nums)))    # "1, 2, 3"
 ' '.join([str(x) for x in nums])    # same as above
 print(*nums)                        # 1 2 3 (unpacks list)
 ```
-
----
 
 ## 🧪 Useful Built-in Functions
 
@@ -104,8 +93,6 @@ sorted(nums)                        # returns new list
 sorted(nums, reverse=True)
 list(reversed(nums))
 ```
-
----
 
 ## 📦 Libraries to Know
 
@@ -128,8 +115,6 @@ graph = defaultdict(list)
 graph[0].append(1)
 ```
 
----
-
 ### `itertools`
 
 ```python
@@ -139,8 +124,6 @@ list(permutations([1,2,3]))         # all perms
 list(combinations([1,2,3], 2))      # all 2-combos
 list(product([0,1], repeat=3))      # binary combos
 ```
-
----
 
 ### `heapq`
 
@@ -156,8 +139,6 @@ heapq.heappop(heap)                # returns smallest
 heapq.heappush(heap, -x)
 ```
 
----
-
 ## 🔄 2D Lists (LeetCode Dungeon Levels)
 
 ```python
@@ -171,8 +152,6 @@ for row in grid:
     for val in row:
         print(val)
 ```
-
----
 
 ## 🧠 Advanced Good-To-Know
 
@@ -191,8 +170,6 @@ from bisect import bisect_left
 i = bisect_left(nums, 3)   # index to insert 3
 ```
 
----
-
 ## 💪 LC Must-Know Patterns
 
 | Pattern               | Use Case                             |
@@ -206,8 +183,6 @@ i = bisect_left(nums, 3)   # index to insert 3
 | Heap / Priority Queue | Top-K, scheduling, greedy problems   |
 | HashMap / Counter     | Frequencies, groupings, fast lookup  |
 
----
-
 ## 🧘 TL;DR Summary (aka Lazy Mode)
 
 * Use **list comprehension** for speed & flex.
@@ -218,11 +193,7 @@ i = bisect_left(nums, 3)   # index to insert 3
 * **Printing?** `print(*arr)` or `' '.join(map(str, arr))`
 * Want to impress? Use `itertools` like a boss.
 
----
-
 # 🧵 Python Strings
-
----
 
 ## 🧠 Basics: What is a String?
 
@@ -235,8 +206,6 @@ s[0]          # 'h'
 len(s)        # 5
 ```
 
----
-
 ## 🔁 Iteration
 
 ```python
@@ -246,8 +215,6 @@ for ch in s:
 for i, ch in enumerate(s):
     print(i, ch)
 ```
-
----
 
 ## 🔨 String Methods (THE POWER TOOLS)
 
@@ -259,8 +226,6 @@ s.title()               # 'Hello World'
 s.strip()               # removes leading/trailing spaces
 s.lstrip(), s.rstrip()
 ```
-
----
 
 ## 🔍 Searching & Replacing
 
@@ -275,8 +240,6 @@ s.startswith("he")      # True
 s.endswith("lo")        # True
 ```
 
----
-
 ## ✂️ Slicing Strings
 
 ```python
@@ -286,8 +249,6 @@ s[::2]          # 'hlo'
 s[::-1]         # 'olleh' ← Reverse string
 ```
 
----
-
 ## 🔗 Concatenation & Joining
 
 ```python
@@ -295,8 +256,6 @@ s[::-1]         # 'olleh' ← Reverse string
 " ".join(["a", "b", "c"])  # 'a b c'
 ",".join(list("abc"))     # 'a,b,c'
 ```
-
----
 
 ## 🛠️ String Formatting
 
@@ -316,8 +275,6 @@ f"{name:<10}"            # left align
 f"{name:^10}"            # center
 ```
 
----
-
 ## 🧮 Counting & Frequency
 
 ```python
@@ -327,16 +284,12 @@ from collections import Counter
 Counter(s)               # Counter({'l': 2, 'h': 1, 'e': 1, 'o': 1})
 ```
 
----
-
 ## 📏 Substrings & Palindromes
 
 ```python
 s[i:j]                  # substring s[i] to s[j-1]
 s == s[::-1]            # is palindrome
 ```
-
----
 
 ## 🧪 Checking Characters
 
@@ -348,8 +301,6 @@ s.isspace()             # all whitespace
 s.islower(), s.isupper()
 ```
 
----
-
 ## 🧱 Converting Between Types
 
 ```python
@@ -358,8 +309,6 @@ int("123")              # 123
 ord("a")                # 97
 chr(97)                 # 'a'
 ```
-
----
 
 ## 💬 ASCII & Character Math
 
@@ -370,8 +319,6 @@ chr(97)                 # 'a'
 ord("a") + 1            # 98
 chr(98)                 # 'b'
 ```
-
----
 
 ## 🧠 Common Patterns
 
@@ -400,8 +347,6 @@ for word in words:
     res[key].append(word)
 ```
 
----
-
 ## 🧰 Regular Expressions (for the masochists)
 
 ```python
@@ -411,8 +356,6 @@ re.findall(r"\d+", s)      # all numbers
 re.sub(r"\s+", "", s)      # remove all whitespace
 re.match(r"abc", s)
 ```
-
----
 
 ## 💥 Common String Problems on LeetCode
 
@@ -424,8 +367,6 @@ re.match(r"abc", s)
 | Stack              | Valid parentheses, decoding strings         |
 | Trie / Prefix Tree | StartsWith, autocomplete, word search       |
 
----
-
 ## 🧘 TL;DR Lazy Genius Mode
 
 * Use `s[::-1]` to reverse
@@ -434,6 +375,4 @@ re.match(r"abc", s)
 * Use `join()` and `split()` like a boss
 * Format strings with `f""` (fight anyone using `%`)
 * Use `.strip()` like you're removing bad vibes
-
----
 
