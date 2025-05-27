@@ -242,4 +242,3 @@ Let $G$ be a graph and $v$ a vertex of $G$. The **degree of $v$**, denoted **deg
 ---
 # The Logic of Compound Statements
 
-
