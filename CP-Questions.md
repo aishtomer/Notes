@@ -484,11 +484,11 @@ class MinQueue:
             # Move everything from s1 to s2
             while self.s1.stack:
                 val, _ = self.s1.stack.pop() # Pop from s1
-                self.s2.push(val)            # Push to s2
+                self.s2.push((val, _))            # Push to s2
         
         # Pop from s2 (which is now in FIFO order)
         if self.s2.stack:
-            self.s2.stack.pop()
+            self.s2.stack.pop()[0]
 
     def get_min(self):
         min1 = self.s1.get_min()
